@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceDatabase fileContentsEncoding="UTF-8" version="2.0">
+<File m="wc_fglgallery" n="wc_fglgallery.4gl" ts="20170908162625686">
+<Fct c="10" el="99" l="92" n="display_size_init(cb ui.ComboBox)" t="F"/>
+<Fct c="10" el="90" l="85" n="display_type_init(cb ui.ComboBox)" t="F"/>
+<Fct c="10" el="83" l="80" n="image_path(path STRING)" t="F"/>
+<Fct c="1" el="78" l="19" n="main()" t="F">
+<Call c="21" i="fglgallery" l="27" n="initialize" t="F"/>
+<Call c="25" i="fglgallery" l="28" n="create" t="F"/>
+<Call c="21" i="fglgallery" l="32" n="addImage" t="F"/>
+<Call c="34" l="32" n="image_path" t="F"/>
+<Call c="21" i="fglgallery" l="33" n="addImage" t="F"/>
+<Call c="34" l="33" n="image_path" t="F"/>
+<Call c="21" i="fglgallery" l="34" n="addImage" t="F"/>
+<Call c="34" l="34" n="image_path" t="F"/>
+<Call c="21" i="fglgallery" l="36" n="addImage" t="F"/>
+<Call c="34" l="36" n="image_path" t="F"/>
+<Call c="21" i="fglgallery" l="37" n="addImage" t="F"/>
+<Call c="34" l="37" n="image_path" t="F"/>
+<Call c="21" i="fglgallery" l="40" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="41" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="42" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="43" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="44" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="45" n="addImage" t="F"/>
+<Call c="21" i="fglgallery" l="52" n="display" t="F"/>
+<Call c="25" i="fglgallery" l="57" n="display" t="F"/>
+<Call c="25" i="fglgallery" l="60" n="display" t="F"/>
+<Call c="21" i="fglgallery" l="75" n="destroy" t="F"/>
+<Call c="21" i="fglgallery" l="76" n="finalize" t="F"/>
+</Fct>
+</File>
+</WorkspaceDatabase>
