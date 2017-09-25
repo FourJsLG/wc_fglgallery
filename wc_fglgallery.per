@@ -8,19 +8,21 @@
 LAYOUT (TEXT="Image Gallery")
 GRID
 {
-<GROUP g1                          >
- Type: [f1                         ]
- Size: [f2                         ]
- Currrent image index: [f3         ]
-<                                  >
-[wc1                               ]
-[                                  ]
-[                                  ]
-[                                  ]
-[                                  ]
-[                                  ]
-[                                  ]
-[                                  ]
+<GROUP g1                                                             >
+ Type: [f1                                                            ]
+ Size: [f2                                                            ]
+ Currrent image index: [f3                                            ]
+ Current image title:  [f4                                            ]
+ Current image URL: [f5                                               ]
+<                                                                     >
+[wc1                                                                  ]
+[                                                                     ]
+[                                                                     ]
+[                                                                     ]
+[                                                                     ]
+[                                                                     ]
+[                                                                     ]
+[                                                                     ]
 }
 END
 END
@@ -30,10 +32,13 @@ COMBOBOX f1 = FORMONLY.gallery_type, NOT NULL,
          INITIALIZER=display_type_init;
 COMBOBOX f2 = FORMONLY.gallery_size, NOT NULL,
          INITIALIZER=display_size_init;
-EDIT f3 = FORMONLY.current;
+EDIT f3 = FORMONLY.current_idx;
+EDIT f4 = FORMONLY.current_title;
+EDIT f5 = FORMONLY.current_url, SCROLL;
 WEBCOMPONENT wc1 = FORMONLY.gallery_wc,
          COMPONENTTYPE = "fglgallery",
          PROPERTIES=(selection="image_selection"),
          SIZEPOLICY = FIXED,
+         HEIGHT=25, WIDTH=100,
          STRETCH = BOTH;
 END
