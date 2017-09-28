@@ -133,6 +133,9 @@ MAIN
        IF (mbox_ync("Delete Warning", "Are you sure you want to delete the current image selection ?")) THEN
          CALL fglgallery.deleteImages(id, struct_value.selected)
          CALL mbox_ok("Delete Confirmation" , struct_value.selected.getLength() || " images deleted")
+         LET rec.current_idx = struct_value.current
+         LET rec.current_title = fglgallery.getTitle(id, rec.current_idx)
+         LET rec.current_url = fglgallery.getPath(id, rec.current_idx)
        END IF
 
     ON ACTION clean
